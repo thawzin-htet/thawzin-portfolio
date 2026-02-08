@@ -138,7 +138,7 @@ const Resume = () => {
             </TabsContent>
 
             {/* SKILLS */}
-            <TabsContent value="skills">
+            {/* <TabsContent value="skills">
               <Section title={skills.title} description={skills.description}>
                 <ScrollArea className="h-[500px]">
                   {skills.categories.map((category, i) => (
@@ -162,9 +162,42 @@ const Resume = () => {
                   ))}
                 </ScrollArea>
               </Section>
-            </TabsContent>
+            </TabsContent> */}
 
-            
+            {/* SKILLS */}
+<TabsContent value="skills">
+  <Section title={skills.title} description={skills.description}>
+    <ScrollArea className="h-[500px]">
+      {skills.categories.map((category, i) => (
+        <div key={i} className="mb-10">
+          <h4 className="text-xl font-semibold mb-6 text-accent">{category.name}</h4>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {category.items.map((skill, j) => (
+              <li key={j}>
+                <TooltipProvider delayDuration={100}>
+                  <Tooltip>
+                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group gap-2">
+                      <div className="text-6xl group-hover:text-accent transition-all">
+                        {skill.icon}
+                      </div>
+                     
+                      <span className="text-sm text-white/80 lg:hidden">
+                        {skill.name}
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent className="hidden lg:block">
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </ScrollArea>
+  </Section>
+</TabsContent>
 
             {/* ABOUT */}
          <TabsContent value="about">
