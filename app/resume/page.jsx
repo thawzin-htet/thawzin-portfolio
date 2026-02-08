@@ -164,6 +164,7 @@ const Resume = () => {
               </Section>
             </TabsContent> */}
 
+
             {/* SKILLS */}
 <TabsContent value="skills">
   <Section title={skills.title} description={skills.description}>
@@ -176,17 +177,16 @@ const Resume = () => {
               <li key={j}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group gap-2">
-                      <div className="text-6xl group-hover:text-accent transition-all">
+                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group gap-3">
+                      <div className="text-6xl group-hover:text-accent transition-all duration-300">
                         {skill.icon}
                       </div>
-                     
-                      <span className="text-sm text-white/80 lg:hidden">
+                      <span className="text-sm text-white/80 lg:hidden font-medium">
                         {skill.name}
                       </span>
                     </TooltipTrigger>
                     <TooltipContent className="hidden lg:block">
-                      <p>{skill.name}</p>
+                      <p className="capitalize">{skill.name}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
@@ -198,7 +198,10 @@ const Resume = () => {
     </ScrollArea>
   </Section>
 </TabsContent>
+            
 
+
+            
             {/* ABOUT */}
          <TabsContent value="about">
              <motion.div
