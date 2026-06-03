@@ -24,7 +24,7 @@ const skills = {
         { icon: <FaJs />, name: "JavaScript" },
         { icon: <FaReact />, name: "React" },
         { icon: <SiNextdotjs />, name: "Next.js" },
-        { icon: <FaJava />, name: "Java" },
+        // { icon: <FaJava />, name: "Java" },
         { icon: <SiSharp />, name: "C#" },
       ],
     },
@@ -52,7 +52,7 @@ const about = {
     { fieldName: "Nationality", fieldValue: "Burmese" },
     { fieldName: "Email", fieldValue: "htett0144@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
-    { fieldName: "Languages", fieldValue: "Burmese (Native), English (B2), Japanese (N4)" },
+    { fieldName: "Languages", fieldValue: "Burmese (Native), English (B2), Japanese (N5)" },
   ],
 };
 
@@ -87,12 +87,7 @@ const education = {
       degree: "Professional C# Backend Development",
       duration: "2026",
     },
-    {
-      institution: "YouTube / Self-Taught",
-      degree: "Java Programming & OOP",
-      duration: "2026 - Present",
-    },
-  ],
+  ]
 };
 
 /* ===================== COMPONENT ===================== */
@@ -138,34 +133,6 @@ const Resume = () => {
             </TabsContent>
 
             {/* SKILLS */}
-            {/* <TabsContent value="skills">
-              <Section title={skills.title} description={skills.description}>
-                <ScrollArea className="h-[500px]">
-                  {skills.categories.map((category, i) => (
-                    <div key={i} className="mb-10">
-                      <h4 className="text-xl font-semibold mb-6 text-accent">{category.name}</h4>
-                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                        {category.items.map((skill, j) => (
-                          <li key={j}>
-                            <TooltipProvider delayDuration={100}>
-                              <Tooltip>
-                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                  <div className="text-6xl group-hover:text-accent transition-all">{skill.icon}</div>
-                                </TooltipTrigger>
-                                <TooltipContent><p>{skill.name}</p></TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </ScrollArea>
-              </Section>
-            </TabsContent> */}
-
-
-            {/* SKILLS */}
 <TabsContent value="skills">
   <Section title={skills.title} description={skills.description}>
     <ScrollArea className="h-[500px]">
@@ -198,9 +165,6 @@ const Resume = () => {
     </ScrollArea>
   </Section>
 </TabsContent>
-            
-
-
             
             {/* ABOUT */}
          <TabsContent value="about">

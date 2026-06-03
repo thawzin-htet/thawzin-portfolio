@@ -14,19 +14,19 @@ const services = [
   {
     num: '02',
     title: 'Backend & API Development',
-    description: 'Designing and implementing robust server-side logic and scalable RESTful APIs using Java (Spring Boot) and C# (.NET Core). Ensuring secure data management and efficient business logic.',
+    description: 'Designing and implementing robust server-side logic and scalable RESTful APIs using C# (.NET Core). Ensuring secure data management and efficient business logic.',
     href:"#"
   },
   {
     num: '03',
     title: 'Full-Stack Web Solutions',
-    description: 'Developing complete web applications that seamlessly integrate frontend and backend technologies. Combining modern frontend frameworks like React/Next.js with robust backend systems like Java (Spring Boot) or C# (.NET) to deliver scalable and maintainable solutions.',
+    description: 'Developing complete web applications that seamlessly integrate frontend and backend technologies. Combining modern frontend frameworks like React/Next.js with robust backend systems like C# (.NET) to deliver scalable and maintainable solutions.',
     href:"#"
   },
   {
     num: '04',
     title: 'Database & System Architecture',
-    description: 'Designing and implementing efficient database schemas and system architectures using SQL (MySQL, PostgreSQL) and NoSQL (MongoDB) databases. Optimizing data storage, retrieval, and management for high-performance applications to ensure data integrity and speed.',
+    description: 'Designing efficient database architectures and backend systems using C# (ADO.NET, EF Core) and relational databases. Optimizing data retrieval, management, and storage to ensure high-performance application delivery and strict data integrity.',
     href:"#"
   },
   ];

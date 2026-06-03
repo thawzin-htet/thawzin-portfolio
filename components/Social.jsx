@@ -1,29 +1,3 @@
-// import Link from "next/link";
-
-// import { FaGithub, FaLinkedin, FaYoutube, FaFacebook, FaEnvelope } from "react-icons/fa";
-
-// const socials = [
-//     { icons: <FaGithub />, path: "" },
-//     { icons: <FaLinkedin />, path:"" },
-//     { icons: <FaFacebook />, path: "" },
-//     { icons: <FaEnvelope />, path: "mailto:htett0144@gmail.com" },
-// ];
-
-// const Social = ({containerStyles, iconStyles}) => {
-//   return (
-//     <div className={containerStyles}>
-//         {socials.map((item, index) => {
-//             return (
-//                 <Link key={index} href={item.path} className={iconStyles}>{item.icons}
-//                 </Link>
-//             );
-//         })}
-//     </div>
-//   );
-// };
-
-// export default Social;
-
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 

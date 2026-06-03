@@ -15,8 +15,7 @@ const Photo = () => {
           transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
       >
-        {/* Relative ကို ဒီ div မှာ မဖြစ်မနေ ထည့်ပေးရပါမယ် */}
-        {/* Image */}
+          {/* Profile Photo */}
         <motion.div 
         initial={{ opacity: 0 }}
         animate={{
