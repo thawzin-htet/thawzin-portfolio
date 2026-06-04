@@ -44,7 +44,7 @@ const skills = {
 
 const about = {
   title: "About me",
-  description: "I am a dedicated Full-stack Developer who enjoys building end-to-end web applications. From crafting responsive user interfaces with React to developing structured backend logic with Java and C#, I focus on creating seamless digital experiences.",
+  description: "I am a dedicated Full-stack Developer who enjoys building end-to-end web applications. From crafting responsive user interfaces with React to developing structured backend logic with C#, I focus on creating seamless digital experiences.",
   info: [
     { fieldName: "Name", fieldValue: "Thaw Zin Htet" },
     { fieldName: "Phone", fieldValue: "(+95) 9445893122" },
